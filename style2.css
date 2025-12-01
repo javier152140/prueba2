@@ -1,60 +1,108 @@
-* {
+html, body{
+  height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-.contenedor {
+.contenedor{
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  font-family: sans-serif;
-  font-size: 24px;
-  font-weight: bold;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.superior {
+.superior{
+  height: 70%;
   display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.izquierda{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+.C{
   flex: 3;
+  font-size: 9px;
+  background-color: aquamarine;
 }
-
-.a {
-  flex: 2;
-  background-color: blue;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.D{
+  flex: 4;
+  background-color: chartreuse;
 }
-
-.vertical {
-  flex: 1;
+.accion{
+  cursor: pointer;
+  transition: background-color 0.2s ease,transform 0.2s ease;
+  background-color: aquamarine;
+}
+.accion:active{
+  transform: translateY(3px);
+  background-color: brown;
+}
+.derecha{
   display: flex;
   flex-direction: column;
+  width: 30%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.b, .c {
-  flex: 1;
+.B{
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  border-bottom: 5px solid green;
+  background-color: gold;
+  align-items: flex-start;
+  padding: 2.5%;
+  gap: 1rem;
+  transition: color 0.3s ease;
 }
-
-.b {
-  background-color: magenta;
-  color: black;
+.B:hover{
+  color: crimson;
 }
-
-.c {
-  background-color: pink;
-  color: black;
-}
-
-.d {
-  flex: 1;
-  background-color: darkgreen;
-  color: white;
+.inferior{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 30%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.A{
+  height: calc(100% -3%); /* Otra opcion es utilizar box-sizing*/
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px grey;
+  padding: 1.5%;
+  font-size: 11px;
+  width: 50%;
+  background-color: coral;
+  transition: color 1s ease;
+
+}
+.A:hover{
+  color: blue;
+}
+.F{
+  display: flex;
+  height: 100%;
+  width: 50%;
+  background-color: lime;
+  margin: 0;
+  padding: 0;
+}
+.E{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+}
+.E:hover{
+  transform: scale(1.15);
 }
